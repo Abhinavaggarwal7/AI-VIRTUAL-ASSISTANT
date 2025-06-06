@@ -1,0 +1,26 @@
+@import "tailwindcss";
+/* Scrollbar styling for history */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Apply this to your global CSS */
+.ui-button {
+  @apply w-[220px] py-3 px-6 text-white font-semibold text-base tracking-wide rounded-full backdrop-blur-md bg-white/10 border border-white/20 shadow-md hover:bg-white/20 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer;
+}
+
+/* Lock all scroll on the whole page */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
